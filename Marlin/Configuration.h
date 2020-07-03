@@ -542,10 +542,22 @@
   //#define DEFAULT_bedKi 1.41
   //#define DEFAULT_bedKd 1675.16
 
-  // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
-  #define DEFAULT_bedKp 120.56
-  #define DEFAULT_bedKi 21.48
-  #define DEFAULT_bedKd 451.00
+// FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
+
+  // Glass bed
+  #define DEFAULT_bedKp 112.26
+  #define DEFAULT_bedKi 21.88
+  #define DEFAULT_bedKd 383.97
+
+// Glass & magnetic
+// #define DEFAULT_bedKp 102.20
+// #define DEFAULT_bedKi 19.62
+// #define DEFAULT_bedKd 354.91
+
+// Standard bed
+// #define DEFAULT_bedKp 143.89
+// #define DEFAULT_bedKi 28.04
+// #define DEFAULT_bedKd 492.22
 
 #endif // PIDTEMPBED
 
@@ -975,7 +987,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { -44, -14, -5 }
+#define NOZZLE_TO_PROBE_OFFSET { -44, -14, -4.99 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
