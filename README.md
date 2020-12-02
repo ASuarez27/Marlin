@@ -20,8 +20,14 @@ Download earlier versions of Marlin on the [Releases page](https://github.com/Ma
 
 To build Marlin 2.0 you'll need [Arduino IDE 1.8.8 or newer](https://www.arduino.cc/en/main/software) or [PlatformIO](http://docs.platformio.org/en/latest/ide.html#platformio-ide). Detailed build and install instructions are posted at:
 
+<<<<<<< HEAD
   - [Installing Marlin (Arduino)](http://marlinfw.org/docs/basics/install_arduino.html)
   - [Installing Marlin (VSCode)](http://marlinfw.org/docs/basics/install_platformio_vscode.html).
+=======
+  board|processor|speed|flash|sram|logic|fpu
+  ----|---------|-----|-----|----|-----|---
+  [ESP32](https://www.espressif.com/en/products/hardware/esp32/overview)|Tensilica Xtensa LX6|160-240MHz variants|---|---|3.3V|---
+>>>>>>> upstream/bugfix-2.0.x
 
 ### Supported Platforms
 
@@ -88,7 +94,18 @@ To build Marlin 2.0 you'll need [Arduino IDE 1.8.8 or newer](https://www.arduino
 
 ## Marlin Support
 
+<<<<<<< HEAD
 For best results getting help with configuration and troubleshooting, please use the following resources:
+=======
+- This branch is for fixing bugs and integrating any new features for the duration of the Marlin 2.0.x life-cycle.
+- Follow the [Coding Standards](https://marlinfw.org/docs/development/coding_standards.html) to gain points with the maintainers.
+- Please submit Feature Requests and Bug Reports to the [Issue Queue](https://github.com/MarlinFirmware/Marlin/issues/new/choose). Support resources are also listed there.
+- Whenever you add new features, be sure to add tests to `buildroot/tests` and then run your tests locally, if possible.
+  - It's optional: Running all the tests on Windows might take a long time, and they will run anyway on GitHub.
+  - If you're running the tests on Linux (or on WSL with the code on a Linux volume) the speed is much faster.
+  - You can use `make tests-all-local` or `make tests-single-local TEST_TARGET=...`.
+  - If you prefer Docker you can use `make tests-all-local-docker` or `make tests-all-local-docker TEST_TARGET=...`.
+>>>>>>> upstream/bugfix-2.0.x
 
 - [Marlin Documentation](http://marlinfw.org) - Official Marlin documentation
 - [Marlin Discord](https://discord.gg/n5NJ59y) - Discuss issues with Marlin users and developers
